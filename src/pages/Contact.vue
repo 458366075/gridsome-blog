@@ -66,6 +66,6 @@ export default {
       })
       alert('提交成功')
     }
-  }
+  } 
 }
 </script>
