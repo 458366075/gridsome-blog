@@ -1,17 +1,17 @@
 <template>
   <Layout>
     <!-- Page Header-->
-    <Header :img="GRIDSOME_API_URL + about.image.data.attributes.url">
+    <Header :img="GRIDSOME_API_URL + $page.about.edges[0].node.image.data.attributes.url">
       <div class="page-heading">
-          <h1>{{about.title}}</h1>
-          <span class="subheading">{{about.subTitle}}</span>
+          <h1>{{$page.about.edges[0].node.title}}</h1>
+          <span class="subheading">{{$page.about.edges[0].node.subTitle}}</span>
       </div>
     </Header>
     <!-- Main Content-->
     <main class="mb-4">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-md-10 col-lg-8 col-xl-7" v-html="about.body">
+                <div class="col-md-10 col-lg-8 col-xl-7" v-html="$page.about.edges[0].node.body">
                 </div>
             </div>
         </div>
@@ -50,9 +50,6 @@ export default {
     return {
       about: {},
     }
-  },
-  mounted() {
-    this.about = this.$page.about.edges[0].node
   }
 }
 </script>
