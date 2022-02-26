@@ -1,14 +1,11 @@
-# Default starter for Gridsome
+> yarn
+> yarn develop
+> yarn build
 
-This is the project you get when you run `gridsome create new-project`.
 
-### 1. Install Gridsome CLI tool if you don't have
 
-`npm install --global @gridsome/cli`
+#### 部署地址
 
-### 2. Create a Gridsome project
++ [Gridsome 前端页面](https://gridsome-blog-6c2tahwuo-458366075.vercel.app)
++ [Strapi 后端 API](http://106.75.136.235:3389/admin)
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
